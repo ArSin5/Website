@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Task1</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<header id="header">
+        <a href="#" class="logo">Panorama</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <img src="Pictures/pyrenees-351266_1920.jpg" id="screen">
+        <h2 id="text"><span>High Quality Vectors & Images</span><br>Panorama</h2> 
+        <a href="#" id="btn">Explore</a>
+    </Section>
+    
+    <div class="sec">
+        <h2>About</h2>
+        <p>
+<br><br>
+Welcome to PANORAMA, your premier destination for high-quality images and vectors. At PANORAMA, we are passionate about visual storytelling and understand the power of compelling visuals in conveying messages effectively. Our curated collection features a diverse range of stunning images and vectors, meticulously selected to meet the highest standards of quality and creativity. Whether you're a designer, marketer, blogger, or enthusiast, PANORAMA is your go-to resource for visually engaging content. We take pride in offering a seamless and user-friendly experience, empowering you to find the perfect visual elements to elevate your projects. Explore the world of PANORAMA, where exceptional imagery meets unparalleled convenience.
+
+<br><br>
+<h1 class="title">Top Categories</h1>
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/fog-7440132_1280.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Outlook</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/snake-6704375_1280.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Animal</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/sushi-balls-5878892_1280.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Food</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/beach-7411683_1280.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Beach</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/robot-6539135_1920.png" alt="Image">
+      <div class="slider__info">
+        <h2>Sci-Fi</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/germany-7409782_1280.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>City</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/christmas-6902574_1280.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Festival</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/girl-7115394_1280.jpg" alt="Image">
+      <div class="slider__info">
+        <h2>Portriat</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/plant-7413415_1920.png" alt="Image">
+      <div class="slider__info">
+        <h2>Vectors</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/muslim-7059888_1280.png" alt="Image">
+      <div class="slider__info">
+        <h2>Art</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="Pictures/birch-tree-5571242_1920.png" alt="Image">
+      <div class="slider__info">
+        <h2>Creativity</h2>
+      </div>
+    </div>
+  </div>
+  <div class="slider__nav">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js'></script><script  src="./script.js"></script>
+<br><br>
+<h2>Why Panorama?</h2><p>
+Choosing PARONOMA means selecting a visual experience that goes beyond the ordinary. Here's why PARONOMA stands out:<br>
+<br>
+<b><ins>Exceptional Quality:</ins></b> PANORAMA is committed to providing only the highest quality images and vectors. Our curated collection undergoes rigorous selection processes, ensuring that every visual element meets and exceeds industry standards.<br>
+<br>
+<b><ins>Diverse Creativity:</ins></b> We understand the importance of diversity in visual content. PANORAMA offers a broad spectrum of images and vectors, catering to various themes, styles, and purposes. From contemporary designs to timeless classics, we have something for everyone.<br>
+<br>
+<b><ins>User-Friendly Interface:</ins></b> Navigating through PANORAMA is a breeze. Our user-friendly platform is designed to make your search for the perfect image or vector seamless and enjoyable. Spend less time searching and more time creating with PANORAMA.<br>
+<br>
+<b><ins>Convenience Redefined:</ins></b> PANORAMA simplifies the process of acquiring high-quality visuals. Whether you're a professional designer, a business owner, or a content creator, our platform provides a convenient and efficient solution to meet your visual needs.<br>
+<br>
+<b><ins>Inspiration at Your Fingertips:</ins></b> PANORAMA is not just a repository of images; it's a wellspring of inspiration. Explore our collection to discover fresh ideas and creative concepts that will elevate your projects and captivate your audience.<br>
+<br>
+<b><ins>Responsive Support:</ins></b> At PANORAMA, we value your experience. Our dedicated support team is always ready to assist you, ensuring that your journey with us is smooth and enjoyable. Your satisfaction is our priority.<br>
+<b><ins>
+Choose PANORAMA for a visual journey that transcends the ordinary, where quality, diversity, and convenience converge to inspire your creativity.
+</ins></b>
+<br><br>
+</p>
+    </div>
+<footer>
+  <p>Copyright &copy; 2024  All Rights Reserved.<br>
+    Aryan Sinha
+</p>
+</footer>
+<script  src="./script.js"></script>
+
+</body>
+</html>
